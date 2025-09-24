@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Business Hub — Contact</title>
+  <meta name="description" content="Contact — Orlando Tech Rwanda" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <span class="brand-text">Orlando Tech Rwanda</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Contact us</h1>
+        <p class="lead">Tell us about your project — we’ll get back to you within 2 business days.</p>
+      </div>
+    </section>
+
+    <section class="contact-form container animate-on-scroll">
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <label>
+            <span class="label-text">Full name</span>
+            <input type="text" id="name" name="name" required minlength="2" />
+            <span class="field-error" id="nameError" aria-live="polite"></span>
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" id="email" name="email" required />
+            <span class="field-error" id="emailError" aria-live="polite"></span>
+          </label>
+
+          <label class="full">
+            <span class="label-text">Message</span>
+            <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+            <span class="field-error" id="messageError" aria-live="polite"></span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send message</button>
+          <div id="formStatus" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; <span id="year-contact"></span> Bucyedusenge Orlando Houston</p>
+      </div>
+      <div class="footer-right">
+        <nav aria-label="Footer">
+          <a href="index.html" class="footer-link">Home</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
